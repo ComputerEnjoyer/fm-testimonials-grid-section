@@ -25,6 +25,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 1174px;
 
   display: grid;
   grid-auto-columns: 327px;
@@ -118,7 +119,6 @@ blockquote {
   ul {
     gap: 30px;
     grid-template-columns: repeat(auto-fit, 255px);
-    grid-auto-flow: dense;
   }
 
   .accent-purple h2 {
