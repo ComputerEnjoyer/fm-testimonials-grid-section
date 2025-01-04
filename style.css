@@ -21,23 +21,22 @@ body {
   place-items: center;
 }
 
-main {
-  max-width: 1110px;
-}
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 1110px;
 
   display: grid;
   grid-auto-columns: 327px;
   gap: 1.5rem;
 }
 
-li {
+.testimonial {
   background-color: #ffff;
   padding: 1.625rem 2rem;
   border-radius: 0.5rem;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
 }
 
 header {
@@ -107,10 +106,6 @@ header img.accent-dark {
   margin-bottom: 2.5rem;
 }
 
-.accent {
-  max-width: 540px;
-}
-
 blockquote {
   margin: 0;
   line-height: 1.25rem;
@@ -119,8 +114,10 @@ blockquote {
 
 @media screen and (min-width: 1174px) {
   ul {
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit, 255px);
+    column-gap: 30px;
+    row-gap: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .accent-purple h2 {
@@ -132,6 +129,6 @@ blockquote {
     grid-column: span 2;
   }
   .testimonial:last-child {
-    grid-area: 1 / 4 / 5 / 5;
+    grid-area: 1 / 4 / 3 / 5;
   }
 }
