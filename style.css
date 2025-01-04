@@ -21,11 +21,13 @@ body {
   place-items: center;
 }
 
+main {
+  max-width: 1110px;
+}
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  max-width: 1174px;
 
   display: grid;
   grid-auto-columns: 327px;
@@ -34,7 +36,7 @@ ul {
 
 li {
   background-color: #ffff;
-  padding: 2rem;
+  padding: 1.625rem 2rem;
   border-radius: 0.5rem;
 }
 
